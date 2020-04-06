@@ -1,0 +1,34 @@
+{
+  "name": "commboard-frontend",
+  "version": "0.1.0",
+  "repository": "git@github.com:echoprotocol/commboard-frontend.git",
+  "author": {
+    "name": "PixelPlex Inc.",
+    "email": "dev@pixelplex.io"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "audit": "audit-ci --config audit-ci.json",
+    "lint": "eslint \"{src}/**/*.js\" --fix"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "config": "^3.3.1",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "audit-ci": "^2.5.1",
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}
