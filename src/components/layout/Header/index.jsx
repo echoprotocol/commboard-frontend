@@ -20,7 +20,6 @@ const Header = React.memo(({ name }) => (
           {name}
         </span>
         <Avatar accountName="userName" />
-        {/* <img src={userIcon} className={styles.userIcon} alt="user" /> */}
       </div>
     </div>
   </header>
@@ -31,7 +30,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  name: 'username',
+  name: '',
 };
 
 export default connect((state) => ({
