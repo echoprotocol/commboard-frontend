@@ -12,8 +12,10 @@ import Proposals from '../components/Proposals';
 import MessageLogs from '../components/MessageLogs';
 import Logs from '../components/Logs';
 
+import '../assets/scss/style.scss';
+
 const Index = () => (
-  <div>
+  <div className="wrapper">
     <Header />
     <Page>
       <Dashboard>

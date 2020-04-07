@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "InterUi";
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/fonts/InterUi/Regular/InterUI-Regular.eot") format("eot");
+	src: url("/fonts/InterUi/Regular/InterUI-Regular.woff2") format("woff2"),
+		url("/fonts/InterUi/Regular/InterUI-Regular.woff") format("woff"),
+		url("/fonts/InterUi/Regular/InterUI-Regular.otf") format("opentype"),
+		url("/fonts/InterUi/Regular/InterUI-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "InterUi";
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/InterUi/Medium/InterUI-Medium.eot") format("eot");
+	src: url("/fonts/InterUi/Medium/InterUI-Medium.woff2") format("woff2"),
+		url("/fonts/InterUi/Medium/InterUI-Medium.woff") format("woff"),
+		url("/fonts/InterUi/Medium/InterUI-Medium.otf") format("opentype"),
+		url("/fonts/InterUi/Medium/InterUI-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "InterUi";
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/InterUi/Bold/InterUI-Bold.eot") format("eot");
+	src: url("/fonts/InterUi/Bold/InterUI-Bold.woff2") format("woff2"),
+		url("/fonts/InterUi/Bold/InterUI-Bold.woff") format("woff"),
+		url("/fonts/InterUi/Bold/InterUI-Bold.otf") format("opentype"),
+		url("/fonts/InterUi/Bold/InterUI-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "InterUi";
+	font-weight: 900;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/InterUi/Black/InterUI-Black.eot") format("eot");
+	src: url("/fonts/InterUi/Black/InterUI-Black.woff2") format("woff2"),
+		url("/fonts/InterUi/Black/InterUI-Black.woff") format("woff"),
+		url("/fonts/InterUi/Black/InterUI-Black.otf") format("opentype"),
+		url("/fonts/InterUi/Black/InterUI-Black.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Hack";
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/Hack/Regular/Hack-Regular.eot") format("eot");
+	src: url("/fonts/Hack/Regular/Hack-Regular.woff2") format("woff2"),
+		url("/fonts/Hack/Regular/Hack-Regular.woff") format("woff"),
+		url("/fonts/Hack/Regular/Hack-Regular.otf") format("opentype"),
+		url("/fonts/Hack/Regular/Hack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Hack";
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+	src: url("/fonts/Hack/Bold/Hack-Bold.eot") format("eot");
+	src: url("/fonts/Hack/Bold/Hack-Bold.woff2") format("woff2"),
+		url("/fonts/Hack/Bold/Hack-Bold.woff") format("woff"),
+		url("/fonts/Hack/Bold/Hack-Bold.otf") format("opentype"),
+		url("/fonts/Hack/Bold/Hack-Bold.ttf") format("truetype");
+}
