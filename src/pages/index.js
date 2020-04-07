@@ -1,7 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 function HomePage() {
-  return <div>Welcome to Next.js!</div>;
+
+  const title = useSelector((state) => state.global.get('title'));
+
+  return <div>Welcome to {title}!</div>;
 }
 
 export default HomePage;
