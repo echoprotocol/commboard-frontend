@@ -1,0 +1,28 @@
+stages:
+  - test
+
+test:lint:
+  stage: test
+  script:
+    - yarn ci
+    - yarn lint
+  tags:
+    - docker
+  only:
+    - merge_requests
+  cache:
+    paths:
+      - node_modules/
+
+test:audit:
+  stage: test
+  script:
+    - yarn ci
+    - yarn run audit
+  tags:
+    - docker
+  only:
+    - merge_requests
+  cache:
+    paths:
+      - node_modules/
