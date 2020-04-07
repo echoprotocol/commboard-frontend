@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './styles.module.scss';
+
 const Dashboard = React.memo(({ children }) => (
-  <div>
+  <div className={styles.dashboard}>
     {children}
   </div>
 ));

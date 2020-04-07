@@ -15,12 +15,27 @@
 	justify-content: space-between;
 }
 
-.info {
+.user {
 	display: flex;
 	align-items: center;
+
+	:global {
+		.avatar-image {
+			svg {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
 }
 
-.info-name {
+.icon {
+	width: 32px;
+	height: 32px;
+}
+
+.user-name {
 	display: inline-block;
 	margin-right: 10px;
+	font-size: 14px;
 }

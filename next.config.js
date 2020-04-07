@@ -1,7 +1,8 @@
 const config = require('config');
+const withImages = require('next-images');
 const withSass = require('@zeit/next-sass');
 
-module.exports = withSass({
+module.exports = withImages(withSass({
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,
@@ -10,4 +11,4 @@ module.exports = withSass({
   },
   env: config,
   exportTrailingSlash: true,
-});
+}));

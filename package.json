@@ -17,13 +17,17 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "config": "^3.3.1",
+    "echojs-ping": "^0.1.7",
     "immutable": "^4.0.0-rc.12",
     "json-immutable": "^0.4.0",
     "lodash.clonedeep": "^4.5.0",
     "next": "^9.3.4",
-		"next-redux-wrapper": "^5.0.0",
-		"node-sass": "^4.13.1",
+    "next-images": "^1.4.0",
+    "next-redux-wrapper": "^5.0.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -36,7 +40,6 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@zeit/next-sass": "^1.0.1",
     "audit-ci": "^2.5.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",

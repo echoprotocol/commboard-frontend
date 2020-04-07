@@ -1,29 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styles from './style.module.scss';
+import dynamic from 'next/dynamic';
 
-const Header = React.memo(({ userName = 'username' }) => (
+import styles from './styles.module.scss';
+import logo from '../../../../public/next/images/logo.svg';
+
+
+const Avatar = dynamic(() => import('../../Avatar'), { ssr: false });
+
+const Header = React.memo(({ name }) => (
   <header className={styles.header}>
     <div className={styles.wrap}>
       <div className={styles.logo}>
-        <img src="/next/images/logo.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
-      <div className={styles.info}>
-        <span className={styles.infoName}>
-          {userName}
+      <div className={styles.user}>
+        <span className={styles.userName}>
+          {name}
         </span>
-        <span className={styles.infoIcon}>Icon</span>
+        <Avatar accountName="userName" />
+        {/* <img src={userIcon} className={styles.userIcon} alt="user" /> */}
       </div>
     </div>
   </header>
 ));
 
 Header.propTypes = {
-  userName: PropTypes.string,
+  name: PropTypes.string,
 };
 
 Header.defaultProps = {
-  userName: 'username',
+  name: 'username',
 };
 
-export default Header;
+export default connect((state) => ({
+  name: state.user.get('name'),
+}), null)(Header);
