@@ -1,7 +1,7 @@
 {
-  "name": "commboard-frontend",
+  "name": "frontend",
   "version": "0.1.0",
-  "repository": "git@github.com:echoprotocol/commboard-frontend.git",
+  "repository": "git@gitlab.pixelplex.by:full-stack/nextjs.git",
   "author": {
     "name": "PixelPlex Inc.",
     "email": "dev@pixelplex.io"
@@ -17,7 +17,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
     "config": "^3.3.1",
     "immutable": "^4.0.0-rc.12",
     "json-immutable": "^0.4.0",
@@ -36,6 +35,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "audit-ci": "^2.5.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
