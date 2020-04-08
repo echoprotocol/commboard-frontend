@@ -1,7 +1,7 @@
 {
-  "name": "commboard-frontend",
+  "name": "frontend",
   "version": "0.1.0",
-  "repository": "git@github.com:echoprotocol/commboard-frontend.git",
+  "repository": "git@gitlab.pixelplex.by:full-stack/nextjs.git",
   "author": {
     "name": "PixelPlex Inc.",
     "email": "dev@pixelplex.io"
