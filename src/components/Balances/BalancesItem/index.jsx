@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const BalancesItem = React.memo(() => (
+const BalancesItem = () => (
   <div>
     BalancesItem
   </div>
-));
+);
 
 
-export default BalancesItem;
+export default memo(BalancesItem);

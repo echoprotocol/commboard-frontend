@@ -1,10 +1,10 @@
 import React from 'react';
 
-const PriceItem = React.memo(() => (
+const PriceItem = () => (
   <div>
     PriceItem
   </div>
-));
+);
 
 
 export default PriceItem;

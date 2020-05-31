@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, memo } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import dynamic from 'next/dynamic';
@@ -9,7 +9,7 @@ import logo from '../../../../public/next/images/logo.svg';
 
 const Avatar = dynamic(() => import('../../Avatar'), { ssr: false });
 
-const Header = React.memo(({ name }) => (
+const Header = ({ name }) => (
   <header className={styles.header}>
     <div className={styles.wrap}>
       <div className={styles.logo}>
@@ -19,11 +19,11 @@ const Header = React.memo(({ name }) => (
         <span className={styles.userName}>
           {name}
         </span>
-        <Avatar accountName="userName" />
+        <Avatar accountName={name} />
       </div>
     </div>
   </header>
-));
+);
 
 Header.propTypes = {
   name: PropTypes.string,
@@ -35,4 +35,4 @@ Header.defaultProps = {
 
 export default connect((state) => ({
   name: state.user.get('name'),
-}), null)(Header);
+}), null)(memo(Header));
