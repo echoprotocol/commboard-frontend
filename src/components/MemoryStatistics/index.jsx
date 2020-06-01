@@ -1,12 +1,12 @@
 import React from 'react';
 import MemoryStatisticsItem from './MemoryStatisticsItem';
 
-const MemoryStatistics = React.memo(() => (
+const MemoryStatistics = () => (
   <div>
     <MemoryStatisticsItem />
     <MemoryStatisticsItem />
   </div>
-));
+);
 
 
 export default MemoryStatistics;

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const MainStatisticsItem = React.memo(() => (
+const MainStatisticsItem = () => (
   <div>
     MainStatisticsItem
   </div>
-));
+);
 
 
-export default MainStatisticsItem;
+export default memo(MainStatisticsItem);

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const RatesItem = React.memo(() => (
+const RatesItem = () => (
   <div>
     RatesItem
   </div>
-));
+);
 
 
 export default RatesItem;

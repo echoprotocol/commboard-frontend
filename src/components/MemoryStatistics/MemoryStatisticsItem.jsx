@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const MemoryStatisticsItem = React.memo(() => (
+const MemoryStatisticsItem = () => (
   <div>
     MemoryStatisticsItem
   </div>
-));
+);
 
 
-export default MemoryStatisticsItem;
+export default memo(MemoryStatisticsItem);

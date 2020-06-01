@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
-const Dashboard = React.memo(({ children }) => (
-  <div>
+import styles from './styles.module.scss';
+
+const Dashboard = ({ children }) => (
+  <div className={styles.dashboard}>
     {children}
   </div>
-));
+);
 
 Dashboard.propTypes = {
   children: PropTypes.node,
@@ -15,4 +17,4 @@ Dashboard.defaultProps = {
   children: null,
 };
 
-export default Dashboard;
+export default memo(Dashboard);

@@ -1,0 +1,41 @@
+@import "../../../assets/scss/helpers/variables.scss";
+
+.header {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  min-height: 60px;
+  color: #fff;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .avatar-image {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.user-name {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
